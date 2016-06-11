@@ -9,7 +9,14 @@ angular.module('aseman',[
 
     $stateProvider
       .state('root', {
-        url: "/",
+        abstract:true,
+        template:'<div ui-view></div>'
       })
+      .state('root.ide',{
+        url:'/ide',
+        controller:'IDECtrl as ideCtrl',
+        templateUrl:'/templates/ide.html'
+      })
+
   })
 ;
