@@ -1,7 +1,10 @@
 'use strict';
 
 angular.module('aseman')
-.controller('IdeCtrl',[function () {
+.controller('IDECtrl',['GUI',function (GUI) {
   var self = this;
-  self.foo = 'bar';
+  self.GUI = GUI;
+  console.log('parent');
+  console.log(GUI);
+  self.foo = 'ide ctrl';
 }]);

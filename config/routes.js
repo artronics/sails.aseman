@@ -33,12 +33,16 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'homepage'
+    view: 'layout'
   },
 
   '/ide':{
     controller:'IDEController',
     action: 'ide'
+  },
+  '/gui':{
+    controller:'IDEController',
+    action: 'gui'
   },
 
   '/login': {
