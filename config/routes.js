@@ -35,9 +35,10 @@ module.exports.routes = {
   '/': {
     view: 'homepage'
   },
-  
+
   '/ide':{
-    view: 'ide'
+    controller:'IDEController',
+    action: 'ide'
   },
 
   '/login': {

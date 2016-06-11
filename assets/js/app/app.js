@@ -10,10 +10,16 @@ angular.module('aseman',[
     $stateProvider
       .state('root', {
         abstract:true,
-        template:'<div ui-view></div>'
+        // resolve:{
+        //   IDEObj:
+        //     function($http) {
+        //       // $http returns a promise for the url data
+        //       return $http({method: 'GET', url: '/ide'});
+        //     }
+        // }
       })
       .state('root.ide',{
-        url:'/ide',
+        url:'/',
         controller:'IDECtrl as ideCtrl',
         templateUrl:'/templates/ide.html'
       })

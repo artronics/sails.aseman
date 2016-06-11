@@ -3,6 +3,6 @@
 angular.module('aseman')
 .controller('MainCtrl',[function () {
   var self = this;
-  self.foo = 'barr';
+  self.foo = 'barr MainCtrl';
   console.log(self.foo);
-}])
+}]);
