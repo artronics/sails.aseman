@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('aseman')
-.controller('MenuebarCtrl',[function () {
+.controller('MenuebarCtrl',['$scope',function ($scope) {
   var self =this;
-  // self.menuItems = self.parent.GUI.menueItems;
-  
+  self.menueItems = $scope.$parent.GUI.menueItems;
+
 }]);
